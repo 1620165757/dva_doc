@@ -8,6 +8,7 @@ const app = dva({
       {name: 'dva', id: 1},
       {name: 'antd', id: 2},
     ],
+    login: []
   },
 });
 
@@ -19,6 +20,6 @@ const app = dva({
 
 // 4. Routery
 app.router(require('./router').default);
-app.model(require('./models/products').default);
+app.model(require('./models/login').default);
 // 5. Start
 app.start('#root');
